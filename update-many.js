@@ -25,27 +25,14 @@ exports = function(arg){
     
     .then(updateResults => {
       
-      //Count the updates
-      i = 0;
+      returnString = "Updated " + updateResults.length + " documents"; 
+      return Promise.resolve(returnString);
       
-      updateResults.forEach(result => {
-        console.log("Updated", result.matchedCount, "document");
-        i++;
-      });
-      
-      return Promise.resolve(i, "documents updated");
     })
-    
-    .then(result => {
-      returnString = "Updated " + result + " documents"; 
-      console.log(returnString);
-      return returnString;
-    })
-    
+
     .catch(error => {
-      console.log("Find error", error);
+      console.log("Update error", error);
       return error ;
     });     
 
 };
-  
