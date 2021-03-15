@@ -17,11 +17,10 @@ exports = function(changeEvent) {
     if (typeof fullDocument !== 'undefined') {
       
       const result = mirror_collection.replaceOne({_id:docId}, fullDocument, {upsert:true});    
-      console.log(result);
       
     } else { // The document was deleted
       
       const result = mirror_collection.deleteOne({_id:docId});
-      console.log(result);
+      
     }
   };
