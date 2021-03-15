@@ -11,7 +11,7 @@ exports = function(changeEvent) {
     // Access the _id of the changed document:
     const docId = changeEvent.documentKey._id;
     
-    // Get the complete updatedated document
+    // Get the complete updated document
     const fullDocument = changeEvent.fullDocument;
     
     if (typeof fullDocument !== 'undefined') {
