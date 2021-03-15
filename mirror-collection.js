@@ -1,5 +1,5 @@
 /* 
- * This Trigger function demonstrates how to mirror changes from one collection to another. To propertly work:
+ * This Trigger function demonstrates how to mirror changes from one collection to another. To properly work:
  *   Operation Type Insert, Update, Delete and Replace must be selected
  *   Full Document must be set to ON
  */
